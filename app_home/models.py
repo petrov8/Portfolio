@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.validators import MinLengthValidator, MaxLengthValidator
-from support.validators import check_if_letters_only, check_if_digits_only
+from support.validators import check_if_letters_only, check_if_digits_only, check_if_full_name
 
 # Create your models here.
 
@@ -36,7 +36,7 @@ class ContactModel(models.Model):
             MinLengthValidator(MIN_DEFAULT_FIELD_LEN, message=f"Must be at least {MIN_DEFAULT_FIELD_LEN} chars long."),
             MaxLengthValidator(MAX_DEFAULT_FIELD_LEN,
                                message=f"Must be no more than {MAX_DEFAULT_FIELD_LEN} chars long."),
-            check_if_letters_only,
+            check_if_full_name,
         ],
         max_length=MAX_DEFAULT_FIELD_LEN
     )

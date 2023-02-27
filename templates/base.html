@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="TemplateMo">
 
-        <title>Angel's website</title>
+        <title href="">Angel's website</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,25 +25,14 @@
 
         <link href="/static/css/templatemo-first-portfolio-style.css" rel="stylesheet">
 
+
     </head>
     
     <body>
 
-{#        <section class="preloader">#}
-{#            <div class="spinner">#}
-{#                    {% if messages %}#}
-{#                    <ul class="messages">#}
-{#                        {% for message in messages %}#}
-{#                            print(message)#}
-{#                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>#}
-{#                        {% endfor %}#}
-{#                    </ul>#}
-{#                    {% endif %}#}
-{#                </div>#}
-{#            </section>#}
-
 
         {% include 'partials/nav.html' %}
+
 
         <main>
 
@@ -54,7 +43,6 @@
             {% include "partials/projects.html" %}
 
             {% include 'partials/contact.html' %}
-
 
         </main>
 

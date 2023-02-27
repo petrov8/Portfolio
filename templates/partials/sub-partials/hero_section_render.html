@@ -1,38 +1,26 @@
 
-{% if form_errors %}
 
+{% if form_errors %}
 
             <div class="col-lg-7 col-12">
                 <div class="hero-text">
                     <div class="hero-title-wrap d-flex align-items-center mb-4">
-    {#                                    <img src="/static/images/my_pics/by_garage_door.JPG" class="avatar-image avatar-image-large img-fluid" alt="">#}
 
-                        <h1 class="hero-title ms-3 mb-0">Ooops .... </h1>
+                        <h1 class="hero-title ms-3 mb-0">Some errors there are. To correct them you have... Yes, hrrmmm. </h1>
 
                     </div>
 
-                        <div class="container">
-
-                            {% if form.errors %}
-                                {% for field in form %}
-                                    {% for error in field.errors %}
-                                        <li class="custom-btn btn custom-link"> Field "{{ field.label }}" - {{ error }}</li>
-                                    {% endfor %}
-                                {% endfor %}
-                            {% endif %}
-                        </div>
-
-    {#                                <h3 class="mb-4">Let me tell you about myself</h3>#}
                     <p class="ms-5 mb-0"><a class="custom-btn btn custom-link" href="#contact">Back to form</a></p>
                 </div>
             </div>
 
             <div class="col-lg-4 col-12 position-relative">
                 <div class="here-image-wrap"></div>
-                <img src="/static/images/my_pics/by_garage_door.JPG" class="hero-image-wrap img-fluid"
-                     style="height: 420px; width: 350px"
+                <img src="/static/images/section_photos/yoda_using_the_force_2.webp" class="hero-image-wrap img-fluid"
+                     style="height: 380px; width: 350px"
                      alt="">
             </div>
+
 
 
 {%  elif not email_sent %}
@@ -40,12 +28,10 @@
             <div class="col-lg-7 col-12">
                 <div class="hero-text">
                     <div class="hero-title-wrap d-flex align-items-center mb-4">
-{#                                    <img src="/static/images/my_pics/by_garage_door.JPG" class="avatar-image avatar-image-large img-fluid" alt="">#}
 
                         <h1 class="hero-title ms-3 mb-0">Hello and welcome to my page!</h1>
                     </div>
 
-{#                                <h3 class="mb-4">Let me tell you about myself</h3>#}
                     <p class="ms-5 mb-0"><a class="custom-btn btn custom-link" href="#about_me">Let me tell you about myself</a></p>
                 </div>
             </div>
@@ -62,7 +48,6 @@
                 <div class="col-lg-7 col-12">
                 <div class="hero-text">
                     <div class="hero-title-wrap d-flex align-items-center mb-4">
-{#                                    <img src="/static/images/my_pics/by_garage_door.JPG" class="avatar-image avatar-image-large img-fluid" alt="">#}
                         <h1 class="hero-title ms-3 mb-0">
                             Thank you for your message! <br>
                             I will be in touch shortly.

@@ -14,6 +14,7 @@ https://templatemo.com/tm-578-first-portfolio
   --white-color:                  #ffffff;
   --primary-color:                #535da1;
   --secondary-color:              #14B789;
+  --error-color:                  #orangered;
   --section-bg-color:             #f9f9f9;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -268,6 +269,14 @@ strong {
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-weight: var(--font-weight-bold);
+  padding: 12px 24px;
+}
+
+.custom-error {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-weight: var(--font-weight-normal);
   padding: 12px 24px;
 }
 
