@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/petrov8/DjangoAcademy">
-    <img src='/static/images/projects/OnelineResume.png' alt="" width="225" height="225">
+    <img src='/static/images/project_photos/OnelineResume.png' alt="" width="225" height="225">
   </a>
 
 <h3 align="center">Personal Portfolio</h3>
