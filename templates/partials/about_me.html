@@ -1,4 +1,5 @@
 
+{% load static %}
 
             <section class="about  section-padding-about" id="about_me">
                 <div class="container">
@@ -19,6 +20,11 @@
                                     <p>
                                         <span class="profile-small-title">Age     </span>
                                         <span>33</span>
+                                    </p>
+
+                                    <p>
+                                        <span class="profile-small-title">Lang.     </span>
+                                        <span> Python3 & JavaScript (incl. TypeScript). </span>
                                     </p>
 
                                     <p>
@@ -91,19 +97,13 @@
                                 <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
                                     <h2 class="text-white me-4 mb-0">About me</h2>
 
-                                    <img src="/static/images/my_pics/bench_by_the_beach.jpeg" class="avatar-image img-fluid" alt="">
+                                    <img src="{% static 'images/my_pics/bench_by_the_beach.jpeg' %}" class="avatar-image img-fluid" alt="">
                                 </div>
 
                                 {% include 'partials/sub-partials/about_me_text.html' %}
 
                             </div>
                         </div>
-
-                        <p>
-                            As a result, I decided to expand my knowledge and
-                            dedicated time and efforts to studying front and back-end web development with
-                            Python and JavaScript.
-                        </p>
 
                         <p>
                             Throughout this journey I learned how to build RESP API, Single Page (SPA) and
