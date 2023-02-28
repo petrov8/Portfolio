@@ -2,11 +2,9 @@ version: "3.4"
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: portfolio_app
-    command: gunicorn --bind 0.0.0.0:8000 portfolio.wsgi:application
+    build: .
+    container_name: portfolio_container
+    command: gunicorn Portfolio.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./staticfiles:/tmp/Portfolio/staticfiles/
     ports:
@@ -16,7 +14,7 @@ services:
 
   nginx:
     image: nginx
-    container_name: web_server
+    container_name: nginx_container
     ports:
       - 80:80
       - 443:443
