@@ -1,12 +1,13 @@
 
+{% load static %}
 
 {% if form_errors %}
 
-            <div class="col-lg-7 col-12">
+            <div class="col-lg-8 col-11 section-padding-hero">
                 <div class="hero-text">
                     <div class="hero-title-wrap d-flex align-items-center mb-4">
 
-                        <h1 class="hero-title ms-3 mb-0">Some errors there are. To correct them you have... Yes, hrrmmm. </h1>
+                        <h1 class="hero-title ms-3 mb-0">Some errors there are. To correct them you must... Yes, hrrmmm. </h1>
 
                     </div>
 
@@ -14,43 +15,42 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-12 position-relative">
+            <div class="col-lg-3 col-12 position-relative">
                 <div class="here-image-wrap"></div>
-                <img src="/static/images/section_photos/yoda_using_the_force_2.webp" class="hero-image-wrap img-fluid"
-                     style="height: 380px; width: 350px"
-                     alt="">
+                <img src="{% static 'images/section_photos/yoda_using_the_force_2.webp' %}" class="hero-image-wrap img-fluid"
+                     alt="form error picture"
+                style="height: 380px; width: 340px">
             </div>
 
 
 
 {%  elif not email_sent %}
 
-            <div class="col-lg-7 col-12">
+            <div class="col-lg-7 col-12 section-padding-hero">
                 <div class="hero-text">
                     <div class="hero-title-wrap d-flex align-items-center mb-4">
 
                         <h1 class="hero-title ms-3 mb-0">Hello and welcome to my page!</h1>
                     </div>
 
-                    <p class="ms-5 mb-0"><a class="custom-btn btn custom-link" href="#about_me">Let me tell you about myself</a></p>
+                    <p class="ms-5 mb-0 "><a class="custom-btn btn custom-link" href="#about_me">Let me tell you about myself</a></p>
                 </div>
             </div>
 
             <div class="col-lg-4 col-12 position-relative">
                 <div class="here-image-wrap"></div>
-                <img src="/static/images/my_pics/by_garage_door.JPG" class="hero-image-wrap img-fluid"
-                     style="height: 420px; width: 350px"
+                <img src="{% static 'images/my_pics/by_garage_door.JPG' %}" class="hero-image-wrap pic-hero img-fluid"
                      alt="">
             </div>
 
-{% else %}
+{% elif email_sent %}
 
-                <div class="col-lg-7 col-12">
+                <div class="col-lg-7 col-12 section-padding-hero">
                 <div class="hero-text">
                     <div class="hero-title-wrap d-flex align-items-center mb-4">
-                        <h1 class="hero-title ms-3 mb-0">
+                        <h1 class="hero-title ms-2 mb-3">
                             Thank you for your message! <br>
-                            I will be in touch shortly.
+                            I will get back to you shortly.
                         </h1>
 
                     </div>
@@ -59,8 +59,7 @@
 
             <div class="col-lg-4 col-12 position-relative">
                 <div class="here-image-wrap"></div>
-                <img src="/static/images/my_pics/bench_by_the_beach.jpeg" class="hero-image-wrap img-fluid"
-                     style="height: 420px; width: 350px"
+                <img src="{% static 'images/my_pics/bench_by_the_beach.jpeg' %}" class="hero-image-wrap pic-hero img-fluid"
                      alt="">
             </div>
 

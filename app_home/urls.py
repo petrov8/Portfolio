@@ -1,6 +1,7 @@
 from django.urls import path
 import app_home.views as resource
 
+
 urlpatterns = [
     path("", resource.home_view, name="home"),
     path("projects/", resource.MyProjectsView.as_view(), name="projects"),

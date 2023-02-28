@@ -27,9 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8^b70)+%y!-!1@(zpa$38_%^6un09f*!!3d1e6k1e+-!ph(1+$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = []
+print(DEBUG)
+
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 
 EMAIL_BACKEND = "anymail.backends.sendinblue.EmailBackend"
 

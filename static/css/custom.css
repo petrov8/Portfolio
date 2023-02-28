@@ -1,0 +1,71 @@
+
+
+.pb-300 {
+    padding-bottom: 300px;
+}
+
+.pb-350 {
+    padding-bottom: 350px;
+}
+.pb-250 {
+    padding-bottom: 250px!important;
+}
+
+.section-padding {
+    padding-bottom: 20px!important;
+    padding-top: 70px!important;
+}
+
+.section-padding-hero {
+    padding-top: 1px!important;
+    padding-bottom: 40px!important;
+}
+
+.section-padding-about {
+    padding-bottom: 1px!important;
+    padding-top: 60px!important;
+}
+
+.section-padding-projects {
+    padding-top: 1px!important;
+    padding-bottom: 30px!important;
+
+}
+
+.btn-message {
+    margin-bottom: 13px!important;
+}
+
+.pic-hero {
+    height: 440px!important;
+    width: 370px!important;
+}
+
+.pic-error {
+    height: 340px!important;
+    width: 340px!important;
+}
+
+.pic-error-404 {
+    height: 420px!important;
+    width: 380px!important;
+}
+
+.nav-btn-custom {
+    font-size: 13px;
+}
+
+.menu-btns {
+  border-radius: var(--border-radius-large);
+  background: transparent;
+  border-width: 1px;
+  font-size: 14px;!important;
+  border-style: solid;
+  border-color: var(--white-color);
+  color: var(--white-color);
+  padding: 8px 22px;
+}
+
+.nav-link-custom {
+    font-size: 14px;!important;
+}

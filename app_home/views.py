@@ -10,11 +10,11 @@ from app_home.forms import ContactForm
 def home_view(request):
     form = ContactForm(request.POST or None)
     email_sent = False
-    form_errors = True if form.errors else False
+    form_errors = False
 
     if request.method == "POST":
-        if not form_errors:
-            email_sent = True
+        form_errors = True if form.errors else False
+        email_sent = True if send_email(request) else False
 
     return render(request, "base.html", {
         "form": form,

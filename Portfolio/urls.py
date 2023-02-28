@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from Portfolio import exceptions as ex
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include('app_home.urls')),
 ]
+
+
+handler404 = ex.handle_404
