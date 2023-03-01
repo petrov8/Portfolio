@@ -65,10 +65,16 @@
 <!-- PROJECT Summary -->
 ## Project Decription:
 
+A personal web-page 
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Features: 
+
+* Contact Form directly 'linked' to my private email address. 
+* Dynamic main-section rendering, conditional on message status.
 
 ### Built With: 
 
@@ -76,14 +82,17 @@
 * Bootstrap 5.0 - [https://getbootstrap.com](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 
-### Services: 
+### Email API: 
 
-* SMPT server - https://www.sendinblue.com
+* SendInBlue - https://www.sendinblue.com
 
 
 ### Deployment: 
 
-* 
+* AWS EC2 - [https://https://aws.amazon.com](https://aws.amazon.com/ec2/)
+* Gunicorn - https://gunicorn.org
+* NginX - https://www.nginx.com
+* Certbot - https://certbot.eff.org/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
