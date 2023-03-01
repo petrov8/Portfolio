@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-if DEBUG:
+if not DEBUG:
     STATIC_ROOT = "/tmp/Portfolio/staticfiles/"
     print(STATIC_ROOT)
 
