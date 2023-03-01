@@ -136,13 +136,14 @@ STATIC_ROOT = "/tmp/Portfolio/staticfiles/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://django-academy.tk/"
+]
+
+
 
 print(os.environ.get("DB_NAME"))
 print(DEBUG)
 print(ALLOWED_HOSTS)
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://django-academy.tk/"
-]
 
 
