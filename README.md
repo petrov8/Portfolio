@@ -65,9 +65,7 @@
 <!-- PROJECT Summary -->
 ## Project Decription:
 
-A personal web-page 
-
-
+A personal web-page about me and my current projects - www.django-academy.tk 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
