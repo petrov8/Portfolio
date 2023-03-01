@@ -75,6 +75,7 @@ A personal web-page
 
 * Contact Form directly 'linked' to my private email address. 
 * Dynamic main-section rendering, conditional on message status.
+* SSL certificate 
 
 ### Built With: 
 
