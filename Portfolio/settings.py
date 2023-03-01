@@ -128,9 +128,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-if not DEBUG:
-    STATIC_ROOT = "/tmp/Portfolio/staticfiles/"
-    print(STATIC_ROOT)
+STATIC_ROOT = "/tmp/Portfolio/staticfiles/"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -141,5 +140,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 print(os.environ.get("DB_NAME"))
 print(DEBUG)
 print(ALLOWED_HOSTS)
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://django-academy.tk/"
+]
 
 
