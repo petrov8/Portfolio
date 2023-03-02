@@ -30,7 +30,7 @@ def send_email(form_details):
             "name": sender_name,
             "mobile": form_details.POST.get("from_mobile"),
             "website": sender_email,
-            "message": form_details.POST.get('content'),
+            "message": form_details.POST.get('message'),
         }
     )
 
