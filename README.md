@@ -89,7 +89,6 @@ A personal web-page about me and my current projects - www.django-academy.tk
 ### Deployment: 
 
 * AWS EC2 - [https://https://aws.amazon.com](https://aws.amazon.com/ec2/)
-* Gunicorn - https://gunicorn.org
 * NginX - https://www.nginx.com
 * Certbot - https://certbot.eff.org/
 
