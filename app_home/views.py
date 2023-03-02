@@ -11,12 +11,12 @@ from app_home.forms import ContactForm
 @csrf_exempt
 def home_view(request):
     form = ContactForm(request.POST or None)
-    email_sent = True
+    email_sent = False
     form_errors = False
 
     if request.method == "POST":
         form_errors = True if form.errors else False
-        # email_sent = True if send_email(request) else False
+        email_sent = True if send_email(request) else False
 
     return render(request, "base.html", {
         "form": form,
