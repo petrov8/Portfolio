@@ -1,3 +1,4 @@
+{% load static %}
 
         <section class="contact section-padding" id="contact">
                     <div class="container">
@@ -5,7 +6,7 @@
 
                             <div class="col-lg-6 col-md-8 col-20" style="width: 1400px">
                                 <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                    <img src="/static/images/section_photos/get_in_touch.JPG" class="avatar-image img-fluid" alt="">
+                                    <img src="{% static 'images/section_photos/message.jpg' %}" class="avatar-image img-fluid" alt="">
 
                                     <h2 class="text-white ms-4 mb-0"> Get in touch </h2>
                                 </div>
@@ -32,11 +33,11 @@
 
                     {% else %}
 
-                            <div class="col-lg-3 col-md-8 col-12" >
+                            <div class="col-lg-3 col-md-9 col-12" >
 
-                                <div class="contact-info d-flex flex-column">
-                                    <img src="/static/images/contact_dove_1.jpg" alt=""
-                                    style="height: 225px; width: 250px" >
+                                <div class="flex-column">
+                                    <img src="/static/images/hanging_phone.jpg" alt=""
+                                     style = "height: 388px">
 
                                 </div>
                             </div>
@@ -73,16 +74,15 @@
 
                             <div class="col-lg-6 col-12 mt-5 mt-lg-0">
                                 <form action="{% url 'home' %}" method="POST" class="custom-form contact-form" role="form">
-                                     {% csrf_token %}
 
-
+                                    {% csrf_token %}
 
                                     <div class="row">
 
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="form-floating">
 
-                                                {% csrf_token %}
+
                                                 {{ form.subject }}
 
                                                 <label for="floatingInput"> Subject </label>
@@ -92,7 +92,7 @@
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="form-floating">
 
-                                                 {% csrf_token %}
+
                                                  {{ form.full_name }}
 
                                                 <label for="floatingInput"> Full Name </label>
@@ -102,7 +102,7 @@
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="form-floating">
 
-                                                 {% csrf_token %}
+
                                                  {{ form.email }}
 
                                                 <label for="floatingInput"> Email </label>
@@ -112,7 +112,7 @@
                                         <div class="col-lg-6 col-md-6 col-12">
                                             <div class="form-floating">
 
-                                                 {% csrf_token %}
+
 
                                                  {{ form.number }}
 

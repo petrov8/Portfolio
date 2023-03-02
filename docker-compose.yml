@@ -18,7 +18,6 @@ services:
     ports:
       - 80:80
       - 443:443
-    restart: always
     volumes:
       - ./staticfiles:/home/app/web/staticfiles/
       - ./nginx/conf.d:/etc/nginx/conf.d
