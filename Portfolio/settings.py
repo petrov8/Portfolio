@@ -144,5 +144,3 @@ print(os.environ.get("DB_NAME"))
 print(DEBUG)
 print(CSRF_TRUSTED_ORIGINS)
 print(ALLOWED_HOSTS)
-
-

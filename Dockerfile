@@ -24,7 +24,6 @@ COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
 
-# first is locla machine , second is image location
 COPY . .
 
 
